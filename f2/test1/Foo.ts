@@ -1,5 +1,13 @@
 
+import { Controller, Get, Query, Post, Body, Put, Param, Delete, Bind } from '@nestjs/common';
 
+@Controller('cats')
+export class CatsController {
+  @Post()
+  @Bind(Body())
+  create(createCatDto) {
+    return 'This action adds a new cat';
+  }
   @Get()
   @Bind(Query())
   findAll(query) {
