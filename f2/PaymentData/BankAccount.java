@@ -5,5 +5,6 @@ public class BankAccount{
     private String lastName;
     private String creditCardNumber;
     private String cvv;
+    private string cvv2
 
 }
